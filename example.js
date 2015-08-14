@@ -1,9 +1,3 @@
-var feathers = require('feathers')
-var primus = require('feathers-primus')
+var Primus = require('primus')
 
-var app = feathers()
-  .configure(primus({
-    pathname: '/primus'
-  }))
-
-global.app = app
+global.primus = Primus('http://localhost:8888', {})

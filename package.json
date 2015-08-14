@@ -1,45 +1,37 @@
 {
-  "name": "feathers-primus",
+  "name": "primusify",
   "version": "0.0.0",
-  "description": "use feathers.primus in node or the browser",
+  "description": "browserify transform to use primus in the browser",
   "main": "index",
-  "browser": {
-    "feathers": "feathers-client"
-  },
-  "browserify": {
-    "transform": [
-      "./primusify"
-    ]
-  },
   "dependencies": {
     "static-module": "^1.1.3"
   },
   "devDependencies": {
+    "browserify": "^11.0.1",
     "primus": "^3.2.1",
-    "feathers": "^1.1.0",
-    "feathers-client": "^0.2.0",
+    "smokestack": "^3.3.0",
+    "tap-parser": "^1.1.6",
+    "tape": "^4.1.0",
     "ws": "^0.7.2"
   },
   "peerDependencies": {
-    "primus": "^3.0.0",
-    "feathers": "^1.1.0",
-    "feathers-client": "^0.2.0"
+    "primus": "^3.0.0"
   },
   "scripts": {
-    "test": "tape test.js"
+    "test": "tape test/main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/holodex/feathers-primus.git"
+    "url": "git+https://github.com/holodex/primusify.git"
   },
   "keywords": [
-    "feathers",
+    "primus",
     "browserify"
   ],
   "author": "ahdinosaur",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/holodex/feathers-primus/issues"
+    "url": "https://github.com/holodex/primusify/issues"
   },
-  "homepage": "https://github.com/holodex/feathers-primus#readme"
+  "homepage": "https://github.com/holodex/primusify#readme"
 }
