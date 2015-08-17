@@ -1,6 +1,6 @@
 {
   "name": "primusify",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "browserify transform to use primus in the browser",
   "main": "index",
   "dependencies": {
@@ -26,7 +26,8 @@
   },
   "keywords": [
     "primus",
-    "browserify"
+    "browserify",
+    "browserify-transform"
   ],
   "author": "ahdinosaur",
   "license": "ISC",
